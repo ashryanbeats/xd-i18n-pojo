@@ -1,0 +1,20 @@
+{
+  "id": "HOW_TO_EXIT",
+  "name": "Exits",
+  "version": "1.0.0",
+  "host": {
+    "app": "XD",
+    "minVersion": "13.0.0"
+  },
+  "uiEntryPoints": [
+    {
+      "type": "menu",
+      "label": {
+        "default": "[Sample] Exits",
+        "ja": "[サンプル] レンディションを保存する"
+      },
+      "commandId": "mainCommand",
+      "shortcut": { "mac": "Cmd+Shift+H", "win": "Ctrl+Shift+H" }
+    }
+  ]
+}
