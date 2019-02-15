@@ -1,7 +1,7 @@
 function mainCommand() {
   document.body.innerHTML = `
-    <dialog id="dialog">
-      <form id="control-form" method="dialog">
+    <dialog>
+      <form method="dialog">
         <footer>
           <button uxp-variant="primary" id="cancel-button">Cancel</button>
           <button type="submit" uxp-variant="cta" id="ok-button">OK</button>
