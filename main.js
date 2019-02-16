@@ -32,6 +32,8 @@ function createDialog() {
   cancelButton.addEventListener("click", e => dialog.close("reasonCanceled"));
 
   const dialog = document.querySelector("#dialog");
+  dialog.addEventListener("close", e => dialog.remove());
+
   return dialog;
 }
 
