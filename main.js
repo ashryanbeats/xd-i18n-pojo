@@ -1,3 +1,5 @@
+const { strings } = require("./strings.js");
+
 async function mainCommand() {
   const dialog = createDialog();
 
@@ -18,11 +20,15 @@ function createDialog() {
     </style>
     <dialog id="dialog">
       <form method="dialog">
-        <h1>Get me out of here</h1>
-        <p>Handling 3 standard outcomes for a modal: OK, Cancel, and Escape.
+        <h1>${strings["en"].h1}</h1>
+        <p>${strings["en"].p}</p>
         <footer>
-          <button uxp-variant="primary" id="cancel-button">Cancel</button>
-          <button type="submit" uxp-variant="cta" id="ok-button">OK</button>
+          <button uxp-variant="primary" id="cancel-button">${
+            strings["en"].cancelButton
+          }</button>
+          <button type="submit" uxp-variant="cta" id="ok-button">${
+            strings["en"].okButton
+          }</button>
         </footer>
       </form>
     </dialog>
