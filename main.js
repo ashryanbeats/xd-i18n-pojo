@@ -13,7 +13,7 @@ const supportedLanguages = require("./manifest.json").languages;
   Get your localized strings from a separate strings file.
   Ex: {en: {//...}, ja: {//...}}
 */
-const { strings } = require("./strings.js");
+const strings = require("./strings.json");
 
 /*
   The main command here simply serves to show the dialog,
