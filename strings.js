@@ -1,7 +1,7 @@
 const strings = {
   en: {
-    h1: "Get me out of here",
-    p: "Handling 3 standard outcomes for a modal: OK, Cancel, and Escape.",
+    h1: "Internationalizing your XD plugin",
+    p: "You can do this with a standard JavaScript object.",
     cancelButton: "Cancel",
     okButton: "OK"
   },
