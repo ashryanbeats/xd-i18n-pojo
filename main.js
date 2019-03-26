@@ -1,6 +1,6 @@
 const { appLanguage } = require("application");
 const { strings } = require("./strings.js");
-const supportedLanguages = ["en", "ja"];
+const supportedLanguages = require("./manifest.json").languages;
 
 async function mainCommand() {
   const dialog = createDialog();
@@ -18,7 +18,7 @@ function createDialog() {
     ? appLanguage
     : supportedLanguages[0];
 
-  console.log(lang);
+  console.log(supportedLanguages);
 
   document.body.innerHTML = `
     <style>
