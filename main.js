@@ -1,3 +1,4 @@
+const { appLanguage } = require("application");
 const { strings } = require("./strings.js");
 
 async function mainCommand() {
@@ -20,14 +21,14 @@ function createDialog() {
     </style>
     <dialog id="dialog">
       <form method="dialog">
-        <h1>${strings["en"].h1}</h1>
-        <p>${strings["en"].p}</p>
+        <h1>${strings[appLanguage].h1}</h1>
+        <p>${strings[appLanguage].p}</p>
         <footer>
           <button uxp-variant="primary" id="cancel-button">${
-            strings["en"].cancelButton
+            strings[appLanguage].cancelButton
           }</button>
           <button type="submit" uxp-variant="cta" id="ok-button">${
-            strings["en"].okButton
+            strings[appLanguage].okButton
           }</button>
         </footer>
       </form>

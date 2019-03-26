@@ -6,10 +6,10 @@ const strings = {
     okButton: "OK"
   },
   ja: {
-    h1: "Get me out of here",
-    p: "Handling 3 standard outcomes for a modal: OK, Cancel, and Escape.",
-    cancelButton: "",
-    okButton: ""
+    h1: "ここから出してくれ",
+    p: "モーダルの3つの標準結果の処理方法: OK、キャンセル、およびエスケープ。",
+    cancelButton: "キャンセル",
+    okButton: "OK"
   }
 };
 
